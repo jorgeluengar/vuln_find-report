@@ -69,12 +69,12 @@ for i in range(1, sheet.nrows):
     developer = sheet.cell_value(i, developer_column)
 
     document.add_heading(
-        'Software: ' + software + " " + version, level=1
+        'Software: ' + str(software) + " " + str(version), level=1
     )
 
     # It requests to vulners all vulnerabilities
     results = vulners_api.softwareVulnerabilities(software, str(version), 1000)
-    results_cpe = vulners_api.cpeVulnerabilities("cpe:/a:" + developer + ":" + software + ":" + version)
+    results_cpe = vulners_api.cpeVulnerabilities("cpe:/a:" + str(developer) + ":" + str(software) + ":" + str(version))
 
     print("Working on:")
     print(str(i) + " -->  " + str(software) + " " + str(version))
