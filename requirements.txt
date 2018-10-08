@@ -1,0 +1,5 @@
+xlrd
+xlwt
+vulners
+docx
+Document
