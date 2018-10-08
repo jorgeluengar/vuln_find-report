@@ -1,5 +1,5 @@
 xlrd
 xlwt
 vulners
-docx
-Document
+python-docx
+document
