@@ -1,3 +1,5 @@
+#NOTE: It doesn't work anymore. The API has changed.It must be reviewed.
+
 # vuln_find-report
 This python script will find vulnerabilities in Vulners and NVD databases of the SW provided in a XLS file. Then, it creates a XLS and DOCX report.
 
